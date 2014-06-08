@@ -58,19 +58,66 @@
 
 						
 						<table class="main.entryone">
-							<table style="background-color:#DDDDDC; left:0; right:0; top:180; height:160; width:100%; position:absolute;">
+							<table style="background-color:#DDDDDC; left:0; right:0; top:174; height:200; width:100%; position:absolute;">
 								  <td>  
                     <font align="center" color=000000><p>
-										    <font size=6px color=#000000><b>Still working on this page..........</b></font><br> 
-                        <br><br>
+										    <font size=5px color=#000000><b>Hand Geometry Recognition.</b></font><br> 
+                        <br>Hand geometry recognition is a form of biometrics, where the shape of a person's hand is used 
+                        <br>to recognize. This is similar to finger print recognition or iris recognition, but limited due
+                        <br>to the fact that hand shape is less unique among individuals than other more commonly used 
+                        <br>biometrics are. None the less, this project seeks to recognize an individual from their hand 
+                        <br>shape using feature extraction and classification. <br>
 									      </p>
                       </font>
 								  </td>
 							</table>
 					  </table>
 
-					  
-            <table style="background-color:#FFFFFF; top:420; height:255; position:absolute;">
+
+
+            <table style="background-color:; top:365; height:255; width:100%; position:absolute; padding:10">
+						  <td align="center">
+                <table cellspacing="35" style="background-color:; top:20; height:255;">
+						      <td align="justify">
+
+                   <th align="justify" padding=40px><p>
+                    <font size=3px color=#000000><b>Project Keywords:</b></font>
+                      <br>&#160;&#160;&#160;
+                        | Java
+                        <br>&#160;&#160;&#160;
+                        | <a class=intext href="http://www.mathworks.com/products/matlab/">Biometrics</a></b> 
+                      <br>&#160;&#160;&#160;&#160;| Probability and Statistics
+                      <br>&#160;&#160;&#160;&#160;| Data Classification
+                    <br><br>
+                    <img src="images/hand5.png" height=250>
+
+                  </p></th>
+
+                  <th align="justify" padding=40px><p>
+                    <font size=3px color=#000000><b>Implementation Process:</b></font>
+                    <br>
+                    <br>&#160;&#160;&#160;&#160;Given a set of data, which in my case consisted of 100 hand shape images, 
+                    <br>extracted from 20 individuals, I first determined what features to use. 
+                    <br>As a requirement in biometrics it is important to that chosen features are 
+                    <br>ones that are common to all hands, but have values that are fairly unique so 
+                    <br>that they can be used to distinguish a pecific given hand. The features I 
+                    <br>selected with these requirements in mind were four different lengths found 
+                    <br>in a hand shown to the left. 
+                    <br>&#160;&#160;&#160;&#160;Once the features were selected and then measured. I implemented a classifier, 
+                    <br>or a software program which will take the four features of one hand and compare
+                    <br>it with features from multiple hands stored in a database, and output which person
+                    <br>the hand most likely belongs to. 
+	                  <br>&#160;&#160;&#160;&#160;For classification I used a Naive Bayesian classifier and 
+                    <br>had an accuracy of 
+
+                    <br><br><br><br>
+                   </p></th>
+							  </td>
+						  </table>
+						</td>
+					</table>
+
+            <table style="background-color:; top:745; height:155; position:absolute;">
 						  <td align="center">
        				</td>
 						</table>
@@ -84,7 +131,7 @@
 							
 							
 							<!=================================FOOTER=================================!>
-					  <div id ="footer">
+										  <div id ="footer">
 							<table class="footer">
 								<table>
 									<tr>
@@ -192,5 +239,37 @@
 		color:CC6666;
 		font-weight:bold;
 		text-decoration:none;
+  }
+
+  A.intext:link
+	{
+		font-family:helvetica;
+		font-size:12;
+		color:CC6666;
+		font-weight:bold;
+		text-decoration:none;
 	}
+	A.intext:active
+	{
+		font-family:helvetica;
+		color:CC6666;
+		font-weight:bold;
+		text-decoration:none;
+	}
+	A.intext:visited
+	{
+		font-family:helvetica;
+		color:CC6666;
+		font-weight:lighter;
+		text-decoration:none;
+	}
+	A.intext:hover
+	{
+		font-family:helvetica;
+		font-size:13;
+		color:000000;
+		font-weight:bold;
+		text-decoration:none;
+	}
+	
 	</style>

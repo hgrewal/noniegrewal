@@ -63,8 +63,8 @@
                     <font align="center" color=000000><p>
 										    <font size=6px color=#000000><b>Leafit! A Java based leaf recognition application.</b></font><br> 
                         <br>As leaf recognition has become more and more prevalent in agruculture, medicine, and biology 
-                        <br>so has the need for a software application. Leafit! provides an easy-to-use, accessible and
-                        <br>cheap solution to leaf recognition. <br>
+                        <br>so has the need for a software application for leaf recognition. Leafit! provides an easy-to-use, 
+                        <br>accessible and inexpensive solution to leaf recognition. <br>
 									      </p>
                       </font>
 								  </td>
@@ -101,19 +101,28 @@
                   <th align="justify" padding=40px><p>
                     <font size=3px color=#000000><b>Implementation Process:</b></font>
                     <br>This biometric project has five main components: (1.) data collection, (2.) feature extraction, (3.) database training, 
-                    <br>(4.) classification, and (5.) application GUI. 
-                    <br>&#160;&#160;<font size=2px color=#000000><b>1.</b></font> For data collection, we took over 300 images of leaves from more than 20 different plant species. The images were 
+                    <br>(4.) classification, and (5.) a graphical user-interface application.  
+                    <br>&#160;&#160;<font size=2px color=#000000><b>1.</b></font> For data collection, we took over 300 images of leaves from more than 20 
+                    different plant species. The images were 
                     <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;taken with a white background and were of a close-up and front-facing leaf.
-                    <br>&#160;&#160;<font size=2px color=#000000><b>2.</b></font> Once the data had been collected we extracted seven unique features to use for classification. These features 
-                    <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;included the area of a leaf's skeleton, leaf surface area, physiological width, and leaf perimeter. The feature extraction was 
+                    <br>&#160;&#160;<font size=2px color=#000000><b>2.</b></font> Once the data had been collected we extracted seven unique features to use
+                    for classification. These features 
+                    <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;included the area of a leaf's skeleton, leaf surface area, physiological width, and leaf
+                    perimeter. The feature extraction was 
                     <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;done using MATLAB. 
                     <br>&#160;&#160;<font size=2px color=#000000><b>3.</b></font> Next we created a classifier using the
-                                                  <a class=intext href="http://www.saedsayad.com/k_nearest_neighbors.htm">Kth Nearest Neighbor</a> algorithm. This classifer takes an unknown leaf's features
+                                                  <a class=intext href="http://www.saedsayad.com/k_nearest_neighbors.htm">Kth Nearest Neighbor</a> algorithm.
+                                                  This classifer takes an unknown leaf's features
                     <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;and compares it with our database (step #4) to recognize which tree the leaf belongs to.  
-                    <br>&#160;&#160;<font size=2px color=#000000><b>4.</b></font> After the classifier had been built, we ran our feature extraction algorithm on our collected images generating our dataset.
-                    <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;To train our application, we trained our classifier to create a logged database of the collected data. 
-                    <br>&#160;&#160;<font size=2px color=#000000><b>5.</b></font> Lastly, we created a Java GUI which accepts an uploaded leaf image and runs the feature extraction algorithm. After this it
-                    <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;then runs the extracted data through the classifier to output the resulting tree species and image.
+                    <br>&#160;&#160;<font size=2px color=#000000><b>4.</b></font> After the classifier had been built, we ran our feature extraction 
+                    algorithm on our collected images generating our dataset.
+                    <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;To train our application, we trained our classifier to maintain a logged database of the
+                    collected data. 
+                    <br>&#160;&#160;<font size=2px color=#000000><b>5.</b></font> Lastly, we created a Java application which accepts an uploaded leaf image
+                    and runs the feature extraction algorithm. 
+                    <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;After this it then runs the extracted data through the classifier to output the resulting tree species
+                    and 
+                    <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;image the leaf is from.
                     <br><br>
                     
                     <font size=3px color=#000000><b>Contributers:</b></font> <a class=intext href="https://www.linkedin.com/profile/view?id=183144813&authType=name&authToken=NKYn&trk=miniprofile-photo">Disha Chaubey</a> 

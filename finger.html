@@ -53,90 +53,97 @@
 						</tr>
 					</table>
 					
-					
 					<!=================================PAGE CONTENT=================================!>
 					
 
 						
 						<table class="main.entryone">
-							<table cellspacing="45" style="background-color:#DDDDDC; left:0; right:0; top:175; height:120; width:100%; position:absolute;">
+							<table style="background-color:#DDDDDC; left:0; right:0; top:180; height:160; width:100%; position:absolute;">
 								  <td>  
-                    <font align="center"><p>
-                      <font style="line-height:105%" color=#000000 size="5.5" align="justify"><b>
-                          Wow, a whole page for me to talk about myself!
-                      </b></font><br>
-									  </p></font>
+                    <font align="center" color=000000><p>
+										    <font size=6px color=#000000><b>Fingerprint Detection and Matching.</b></font><br> 
+                        <br>Finger print recognition is one of the most used biometric in present day society – with
+                        <br>its use cases ranging from forensics, security, and identification. In this project I 
+                        <br>implemented a fingerprint matching software. 									      </p>
+                      </font>
 								  </td>
 							</table>
 					  </table>
 
+					  <table style="background-color:#FFFFFF; top:375; bottom:300; position:absolute; width:100%;">
+						  <td align="center"><p>
+                <b>Probe Fingerprint</b> (ie. fingerprint we are trying to identify) <br><br>
+                <img src="images/cm.png" height=250> <br><br><br> 
+                <b>Sample Fingerprint Minutiae</b> (ie. fingerprint we are using to match the probe fingerprint 
+                   <br>minutiae points overlayed over probe fingerprint) <br><br>
+                <b>1.</b><img src="images/cm_fp5_overlay.png" height=250> 
+                &#160;&#160;&#160;
+                <b>2.</b><img src="images/cm_fp3_overlay.png" height=250> 
+                &#160;&#160;&#160;
+                <b>3.</b><img src="images/cm_fp6_overlay.png" height=250> 
+                <br><br>
+                <b>Probe Fingerprint = Sample #2</b> (as you can see the blue minutiae points from #2 fairly
+                <br> match the probe images' shown in red) 
+                <br>
+                <br>
+							</p></td>
+						</table>
 
-            <table style="background-color:#DDDDDC; top:265; left:0; height:255; width:100%; position:absolute;">
+
+            <table style="background-color:#DDDDDC; left:0; top:1120; height:255; width:100%; position:absolute; padding:10">
 						  <td align="center">
-                <table cellspacing="20" style="background-color:; margin-left:-20; top:15; height:255;">
+                <table cellspacing="35" style="background-color:#DDDDDC; top:20; height:255;">
 						      <td align="justify">
 
-                   <th><img style="margin-top:-30;" src="images/me.png" width=260></th>
+                   <th align="justify" padding=40px><p>
+                    <font size=3px color=#000000><b>Project Keywords:</b></font>
+                      <br>&#160;&#160;&#160;
+                        | <a class=intext href="http://www.mathworks.com/products/matlab/">MATLAB</a>
+                      <br>&#160;&#160;&#160;
+                        | <a class=intext href="http://www.mathworks.com/products/matlab/">Biometrics</a>
+                      <br>&#160;&#160;&#160;&#160;| Fingerprint Recognition 
+                      <br>&#160;&#160;&#160;&#160;| <a class=intext href="http://en.wikipedia.org/wiki/RANSAC">RANSAC</a>
+                    <br><br>
 
-                   <th align="justify" padding=40px style="margin-top:-10;"><p>
-								    <p>
-                      I'm currently a Computer Science student at the University of California, 
-                      <br>San Diego (GO Tritons!) Programming is not only my major (and career) but 
-                      <br>also a passion. I love the problem solving thrill and satisfaction of figuring
-                      <br>out algorithms to create fun and useful applications. But when I am not coding, 
-                      <br>I like to go for runs and hikes with my dog - Aidan, he is a Yorkie/Maltese mix 
-                      <br>- and checking out the latest movies. 
-                      <br>
-                      <br>I will be graduating in June 2015, and am currently in search of getting a 
-                      <br>full-time software engineering job. So if you are interested in hiring me, check
-                      <br> out my resume and personal statement, or continue reading more about my 
-                      <br>personal and professional goals. 
-                      <br>
-                      <br>
-                    </p>
-                   </th>
+                  </p></th>
 
+                  <th align="justify" padding=40px><p>
+                    <font size=3px color=#000000><b>Implementation Process:</b></font>
+                    <br>&#160;&#160;&#160;This project was implemented in two parts - part one was to extract features
+                    <br>and part two was to match features to classify from whom the fingerprint came from. 
+	                  <br>&#160;&#160;&#160;For feature selections, I decided to use minutiae points. <a class=intext href="http://en.wikipedia.org/wiki/Minutiae">Minutiae features</a> 
+                    <br>are ridges and bifurcations in a fingerprint, in particular they are the points 
+                    <br>where these ridges and bifurcations start and end. To extract the minutiae points, 
+                    <br>I used a off the shelf software to detect minutiae points from the <a class=intext href="http://www.nist.gov/">National 
+                    <br>Institutes of Standards and Technologies (NIST)</a>, called MINDTCT. 
+	                  <br>&#160;&#160;&#160;Once the features had been extracted I wrote a matcher program in MATLAB. To do 
+                    <br>this I used the RANSAC classification algorithm and compared the locations and 
+                    <br>orientations of the minutiae points from the probe and test samples to get the 
+                    <br>total number of matching ridges and bifurcations in the fingerprints.  
+                     
+                    <br><br>
+                  </p></th>
 							  </td>
 						  </table>
 						</td>
 					</table>
 
-          <table style="background-color:; top:580; height:150; left:30; width:100%; position:absolute;">
+
+            <table style="background-color:; top:1280; height:255; position:absolute;">
 						  <td align="center">
-                  <a href="documents/resume.pdf"><img src="images/reslink.png" style="margin-left:-20;<D-r>" height=150></a>
-                   &#160;&#160;<img src="images/respslinkdiv.png" height=150> &#160;&#160;&#160; 
-                  <a href="documents/personalstatement.pdf"><img src="images/pslink.png" height=150></a>
-              </td>
-				  </table>
-
-          <table style="background-color:#DDDDDC; top:755; left:0; height:150; width:100%; position:absolute;">
-						  <td align="center">
-                <br><br>
-                  <p><font size=2.5 color=#000000><b>Hover over the images to learn more about my professional and personal goals.</b></font></p>
-
-                  <image src="images/bio_personal.png" onmouseover="this.src='images/bio_personal_text.png'" onmouseout="this.src='images/bio_personal.png'" width=350>
-                  <image src="images/bio_prof.png" onmouseover="this.src='images/bio_prof_text.png'" onmouseout="this.src='images/bio_prof.png'" width=350>
-                  <br>
-                  <image src="images/bio_wic.png" onmouseover="this.src='images/bio_wic_text.png'" onmouseout="this.src='images/bio_wic.png'" width=350>
-                  <image src="images/bio_contact.png" onmouseover="this.src='images/bio_contact_text.png'" onmouseout="this.src='images/bio_contact.png'" width=350>
-                <br><br><br>
+       				</td>
+						</table>
 
 
-              </td>
-				  </table>
-
-
-          <table style="background-color:#DDDDDC; top:1360; margin-left:-15; height:150; width:100%; position:absolute;">
-						  <td align="center">
-
-
-              </td>
-				  </table>
 
 
 							
+					
+
+							
+							
 							<!=================================FOOTER=================================!>
-					 					  <div id ="footer">
+										  <div id ="footer">
 							<table class="footer">
 								<table>
 									<tr>
